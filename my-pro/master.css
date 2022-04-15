@@ -1,0 +1,128 @@
+.flex {
+  background-color: aquamarine;
+  padding: 20px;
+  width: 900px;
+  margin: 20px auto;
+  flex-direction: ;
+  display: flex;
+
+}
+
+.flex div {
+  background-color: brown;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 2px;
+  padding: 20px;
+  width: 25%;
+  margin-left: 1%;
+  border-radius: 9px;
+}
+
+.float {
+  background-color: aquamarine;
+  padding: 20px;
+  width: 900px;
+  margin: 20px auto;
+  overflow: hidden;
+
+
+}
+
+hr {
+  height: 2px;
+  border: 2px rgba(232, 42, 42, 0.405) solid;
+  box-shadow: 30px 30px 5 0 rgba(114, 67, 67, 0.489);
+}
+
+.float div {
+  background-color: brown;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  padding: 20px;
+  width: 24%;
+  margin-left: 1%;
+  border-radius: 9px;
+}
+
+
+
+
+.parent {
+  margin: 30px;
+  overflow: hidden;
+  counter-increment: members-counter;
+
+}
+
+
+.one {
+  background-color: #eee;
+  padding: 10px;
+  width: 70%;
+  float: right;
+  margin-left: 3%;
+  position: relative;
+  height: 5%;
+  margin-right: 4%;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.188) inset;
+  box-shadow: 1px 0px 3px 0px rgba(167, 255, 34, 0.573);
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  box-sizing: content-box;
+
+}
+
+.one::after {
+  content: counter(members-counter);
+  color: white;
+  background-color: rgb(180, 25, 25);
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  margin-top: -4px;
+
+}
+
+.user {
+  background-color: #eee;
+  margin-right: 1%;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+  width: 10%;
+  float: left;
+  height: 5%;
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.user:hover {
+  background-color: rgb(220, 56, 56);
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+
+}
+
+.one:hover {
+  background-color: rgb(220, 56, 56);
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.one::before {
+  content: attr(data-text);
+
+}
+
+* {
+  box-sizing: border-box;
+}
